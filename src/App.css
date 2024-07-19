@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto";
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movies-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(154, 83, 212);
+  padding: 20px;
+  color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loading-container {
+  display: flex;
+  justify-content: center;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* failure View */
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  width: 400px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.input-container input {
+  padding: 10px 10px;
+  margin: 0px 3px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+.input-container button {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 5px;
+  border: 0px;
+  outline: 0px;
+  padding: 10px;
+}
+.no-jobs-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.no-jobs-container img {
+  width: 400px;
+  height: 300px;
 }
